@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EGD IT</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light border-bottom box-shadow mb-3">
+        <a class="navbar-brand" href="http://www.electricguarddog.com">
+            Electric Guard Dog
+        </a>
+        <span class="navbar-text">
+                AfterHours Upgrades
+        </span>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5 my-auto mr-5">
+                <img class="img-fluid mb-4" src="logo.png" alt="">
+                <h1 class="text-center"><b>IT SUPPORT</b></h1>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-light">
+                    <div class="card-header text-center">Create a Support Ticket</div>
+                    <div class="card-body">
+                        <p class="text-center">Please fill out the form below and we will get right back to you. You can also call us at 803-404-5303.</p>
+                        <form class="p-3" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+        
+                            <input type=hidden name="orgid" value="00Di0000000eyGb">
+                            <input type=hidden name="retURL" value="http://electricguarddog.com">
+                            
+                            <!--  ----------------------------------------------------------------------  -->
+                            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                            <!--  these lines if you wish to test in debug mode.                          -->
+                            <!--  <input type="hidden" name="debug" value=1>                              -->
+                            <!--  <input type="hidden" name="debugEmail" value="egdsite@afterhoursupgrades.com">   -->
+                            <!--  ----------------------------------------------------------------------  -->
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="name">Name</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="name" maxlength="80" name="name" size="20" type="text" required/>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="email">Email</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="email" maxlength="80" name="email" size="20" type="text" required/>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="phone">Phone</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" required/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                            <label class="col-sm-3 col-form-label" for="type">Type</label>
+                                <div class="col-sm-9">
+                                    <select  id="type" name="type" class="custom-select">
+                                        <option value="">--None--</option>
+                                        <option value="Administrative">Administrative</option>
+                                        <option value="Environmental/Building/Provider">Environmental/Building/Provider</option>
+                                        <option value="Equipment fix/replace">Equipment fix/replace</option>
+                                        <option value="Equipment setup (new)">Equipment setup (new)</option>
+                                        <option value="Equipment Use">Equipment Use</option>
+                                        <option value="Network">Network</option>
+                                        <option value="no issue / not IT issue">no issue / not IT issue</option>
+                                        <option value="Office 365">Office 365</option>
+                                        <option value="Salesforce">Salesforce</option>
+                                        <option value="SedonaOffice">SedonaOffice</option>
+                                        <option value="ShoreTel/Phones/Fax">ShoreTel/Phones/Fax</option>
+                                        <option value="Software">Software</option>
+                                        <option value="Support">Support</option>
+                                        <option value="User caused issue">User caused issue</option>
+                                        <option value="Virus/Malware">Virus/Malware</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label" for="subject">Subject</label>
+                                <div class="col-sm-9">
+                                    <input class="form-control" id="subject" maxlength="80" name="subject" size="20" type="text" required/>
+                                </div>
+                            </div>
+                
+                            <div class="form-group row mb-3">
+                                <label class="col-sm-3 col-form-label" for="description">Description</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" name="description" required></textarea>
+                                </div>
+                            </div>
+                
+                            <input type="hidden"  id="external" name="external" value="1" />
+                            
+                            <input class="btn btn-primary btn-block" type="submit" name="submit">
+                            
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <footer class="my-5 pt-3 text-muted text-center text-small footer-layout">
+
+        <p class="mb-1">&copy; <script>document.write(new Date().getFullYear());</script> Electric Guard Dog</p>
+            
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="http://tickets.electricguarddog.com">Support</a></li>
+        </ul>
+        
+    </footer>
+</body>
+</html>
